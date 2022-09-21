@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+      }
+      #caixa {
+        background-color: red;
+      }
+      #caixa2 {
+        background-color: brown;
+      }
+      .nota-verde {
+        color: rgb(0, 255, 0);
+      }
+      .nota-vermelha {
+        color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body class="teste vermelho">
+    <div id="caixa"></div>
+
+    <div id="caixa2" class="marrom"></div>
+
+    <h2>
+      Você realizou a prova do Hcode Lab. Seu proveitamento foi:
+      <span>70%</span>
+    </h2>
+
+    <form>
+      <input type="text" name="nome" id="nome" />
+      <button type="button">Enviar</button>
+    </form>
+
+    <script>
+      /*
+      console.dir((document.body.children[0].style.backgroundColor = "green"));
+
+      console.log(document.getElementById("caixa"));
+      console.log(document.getElementsByTagName("div")[0]);
+      console.log(document.getElementsByClassName("vermelho")[0]);
+      console.log(document.querySelector("body"));
+      console.log(document.querySelector("#caixa"));
+      console.log(document.querySelector(".marrom"));
+      console.log(document.querySelectorAll("div"));
+      console.log(document.querySelectorAll("#caixa2"));
+      */
+
+      const nota = 70;
+
+      const tagSpan = document.querySelector("h2 span");
+      tagSpan.innerHTML = `${nota}%`;
+
+      tagSpan.className = nota >= 70 ? "nota-verde" : "nota-vermelha";
+    </script>
+  </body>
+</html>

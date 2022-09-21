@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "backend-hcode",
+  "version": "1.0.0",
+  "description": "Aqui estou guardando materiais de estudo durante o processo do curso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrorambaldi/backend-hcode-curso.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrorambaldi/backend-hcode-curso/issues"
+  },
+  "homepage": "https://github.com/pedrorambaldi/backend-hcode-curso#readme"
+}
